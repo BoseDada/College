@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+interface AdvancedArithmetic
+{
+    public int divisorsum(int n);
+}
+
+class Calculator implements AdvancedArithmetic{
+    public int divisorsum(int n)
+    {
+        int sum = 0;
+        for (int i=1; i<=n; i++)
+        {
+            if (n%i == 0)
+            {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+}
+
+class Mycalculator
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        Calculator C1 = new Calculator();
+        int n = sc.nextInt();
+        System.out.println("Sum of factors of the number: " + C1.divisorsum(n));
+    }
+}
