@@ -64,27 +64,27 @@ int main()
     printf("Enter available z: ");
     scanf("%d",&available_z);
     printf("Safe sequence: \n");
-    
-    for (int i=0; i<n; i++){
 
-    for (int j=0; j<n; j++)
+    for (int i=0; i<n; i++)
     {
-        if (available_x >= current_x[j] && available_y >= current_y[j] && available_z >= current_z[j])
+        for (int j=0; j<n; j++)
         {
-            printf("Process %d\n",j);
-            available_x += allo_x[j];
-            available_y += allo_y[j];
-            available_z += allo_z[j];
-            current_x[j] = 100;
-            current_y[j] = 100;
-            current_z[j] = 100;
-            if (available_x == system_max_x && available_y == system_max_y && available_z == system_max_z)
+            if (available_x >= current_x[j] && available_y >= current_y[j] && available_z >= current_z[j])
             {
-                break;
+                printf("Process %d\n",j);
+                available_x += allo_x[j];
+                available_y += allo_y[j];
+                available_z += allo_z[j];
+                current_x[j] = 100;
+                current_y[j] = 100;
+                current_z[j] = 100;
+                if (available_x == system_max_x && available_y == system_max_y && available_z == system_max_z)
+                {
+                    break;
+                }
             }
-        }
         
-    }
+        }
     }
     
 
