@@ -26,6 +26,7 @@ class distance
 
             System.out.print("Do you want to continue?: ");
             choice = sc.nextInt();
+            sc.close();
         }
     }
 }
