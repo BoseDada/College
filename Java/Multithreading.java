@@ -3,7 +3,7 @@ class Badiya extends Thread{
     {
         try{
             Thread.sleep(4000);
-            System.out.println("Thread no. 1");
+            System.out.println("Thread no. 1 (After 4 seconds)");
         }
         catch(InterruptedException e)
         {
@@ -17,7 +17,7 @@ class Kyabaathai extends Thread{
     {
         try{
             Thread.sleep(3000);
-            System.out.println("Thread no. 2");
+            System.out.println("Thread no. 2 (After 7 seconds)");
         }
         catch(InterruptedException e)
         {
