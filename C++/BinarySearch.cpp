@@ -45,7 +45,7 @@ using namespace std;
 //     }
 // }
 
-//Part 2
+// Part 2
 
 int binarysearch(int A[], int el1,int ub, int lb)
 {
