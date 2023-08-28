@@ -5,8 +5,8 @@
 int inf = INT_MAX;
 using namespace std;
 int ** Graph(int nodes){
-int** Graph = new int*[nodes];
-for(int i = 0;i<nodes;i++){
+    int** Graph = new int*[nodes];
+    for(int i = 0;i<nodes;i++){
 Graph[i] = new int[nodes];
 for(int j = 0;j<nodes;j++){
 if(i==j){
