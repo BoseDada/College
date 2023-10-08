@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    cout << "Name: Adyot Bose" << endl;
+    cout << "Enroll no.: A2305221082" << endl;
     int n;
     cout << "Enter the size of the matrix: ";
     cin >> n;
