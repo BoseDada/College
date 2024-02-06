@@ -31,6 +31,7 @@ void removingleftrecursion(char arr[],int size, char ss){
     
 
     char rep = 'G';
+    cout << "Left recursion removed: " << endl;
     for (int i=0; i<1; i++){
         cout << ss << '>' << beta[i] << rep << endl;
     }
